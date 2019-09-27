@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/SPA-Blog/static/css/main.b98b75f5.chunk.css",
-    "main.js": "/SPA-Blog/static/js/main.df76c631.chunk.js",
-    "main.js.map": "/SPA-Blog/static/js/main.df76c631.chunk.js.map",
-    "runtime~main.js": "/SPA-Blog/static/js/runtime~main.6c0b6609.js",
-    "runtime~main.js.map": "/SPA-Blog/static/js/runtime~main.6c0b6609.js.map",
-    "static/js/2.170f2b59.chunk.js": "/SPA-Blog/static/js/2.170f2b59.chunk.js",
-    "static/js/2.170f2b59.chunk.js.map": "/SPA-Blog/static/js/2.170f2b59.chunk.js.map",
+    "main.css": "/SPA-Blog/static/css/main.35568489.chunk.css",
+    "main.js": "/SPA-Blog/static/js/main.bb40e303.chunk.js",
+    "main.js.map": "/SPA-Blog/static/js/main.bb40e303.chunk.js.map",
+    "runtime~main.js": "/SPA-Blog/static/js/runtime~main.5063f3cc.js",
+    "runtime~main.js.map": "/SPA-Blog/static/js/runtime~main.5063f3cc.js.map",
+    "static/js/2.402dff32.chunk.js": "/SPA-Blog/static/js/2.402dff32.chunk.js",
+    "static/js/2.402dff32.chunk.js.map": "/SPA-Blog/static/js/2.402dff32.chunk.js.map",
     "index.html": "/SPA-Blog/index.html",
-    "precache-manifest.0a91615be3bb806bec22be6129b28c51.js": "/SPA-Blog/precache-manifest.0a91615be3bb806bec22be6129b28c51.js",
+    "precache-manifest.ba0ca25e2c042022b0d7ed9b7b0aeebc.js": "/SPA-Blog/precache-manifest.ba0ca25e2c042022b0d7ed9b7b0aeebc.js",
     "service-worker.js": "/SPA-Blog/service-worker.js",
-    "static/css/main.b98b75f5.chunk.css.map": "/SPA-Blog/static/css/main.b98b75f5.chunk.css.map",
-    "static/media/img_01.jpg": "/SPA-Blog/static/media/img_01.2b677c4e.jpg"
+    "static/css/main.35568489.chunk.css.map": "/SPA-Blog/static/css/main.35568489.chunk.css.map",
+    "static/media/img_01.jpg": "/SPA-Blog/static/media/img_01.c32016de.jpg",
+    "static/media/img_02.jpg": "/SPA-Blog/static/media/img_02.6ac9aae3.jpg",
+    "static/media/img_03.jpg": "/SPA-Blog/static/media/img_03.758e427a.jpg",
+    "static/media/img_04.jpg": "/SPA-Blog/static/media/img_04.3173d716.jpg",
+    "static/media/img_05.jpg": "/SPA-Blog/static/media/img_05.4f90bb89.jpg"
   }
 }
