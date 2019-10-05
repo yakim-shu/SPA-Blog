@@ -1,20 +1,15 @@
 {
   "files": {
-    "main.css": "/SPA-Blog/static/css/main.77765164.chunk.css",
-    "main.js": "/SPA-Blog/static/js/main.770a96b5.chunk.js",
-    "main.js.map": "/SPA-Blog/static/js/main.770a96b5.chunk.js.map",
+    "main.css": "/SPA-Blog/static/css/main.af647233.chunk.css",
+    "main.js": "/SPA-Blog/static/js/main.26ec84b1.chunk.js",
+    "main.js.map": "/SPA-Blog/static/js/main.26ec84b1.chunk.js.map",
     "runtime~main.js": "/SPA-Blog/static/js/runtime~main.5063f3cc.js",
     "runtime~main.js.map": "/SPA-Blog/static/js/runtime~main.5063f3cc.js.map",
-    "static/js/2.402dff32.chunk.js": "/SPA-Blog/static/js/2.402dff32.chunk.js",
-    "static/js/2.402dff32.chunk.js.map": "/SPA-Blog/static/js/2.402dff32.chunk.js.map",
+    "static/js/2.2eec1df7.chunk.js": "/SPA-Blog/static/js/2.2eec1df7.chunk.js",
+    "static/js/2.2eec1df7.chunk.js.map": "/SPA-Blog/static/js/2.2eec1df7.chunk.js.map",
     "index.html": "/SPA-Blog/index.html",
-    "precache-manifest.65a5597a26dcc69d6a2f9cd00df1044d.js": "/SPA-Blog/precache-manifest.65a5597a26dcc69d6a2f9cd00df1044d.js",
+    "precache-manifest.9f17803cf8a04e634a5375d259803013.js": "/SPA-Blog/precache-manifest.9f17803cf8a04e634a5375d259803013.js",
     "service-worker.js": "/SPA-Blog/service-worker.js",
-    "static/css/main.77765164.chunk.css.map": "/SPA-Blog/static/css/main.77765164.chunk.css.map",
-    "static/media/img_01.jpg": "/SPA-Blog/static/media/img_01.c32016de.jpg",
-    "static/media/img_02.jpg": "/SPA-Blog/static/media/img_02.6ac9aae3.jpg",
-    "static/media/img_03.jpg": "/SPA-Blog/static/media/img_03.758e427a.jpg",
-    "static/media/img_04.jpg": "/SPA-Blog/static/media/img_04.3173d716.jpg",
-    "static/media/img_05.jpg": "/SPA-Blog/static/media/img_05.4f90bb89.jpg"
+    "static/css/main.af647233.chunk.css.map": "/SPA-Blog/static/css/main.af647233.chunk.css.map"
   }
 }
