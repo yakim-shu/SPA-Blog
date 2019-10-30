@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SPA-Blog/static/css/main.6ff89437.chunk.css",
+    "main.js": "/SPA-Blog/static/js/main.f1d38303.chunk.js",
+    "main.js.map": "/SPA-Blog/static/js/main.f1d38303.chunk.js.map",
+    "runtime~main.js": "/SPA-Blog/static/js/runtime~main.6c0b6609.js",
+    "runtime~main.js.map": "/SPA-Blog/static/js/runtime~main.6c0b6609.js.map",
+    "static/js/2.495d9ce5.chunk.js": "/SPA-Blog/static/js/2.495d9ce5.chunk.js",
+    "static/js/2.495d9ce5.chunk.js.map": "/SPA-Blog/static/js/2.495d9ce5.chunk.js.map",
+    "index.html": "/SPA-Blog/index.html",
+    "precache-manifest.3706bc93faec5a1c744c7207ad3cd5b7.js": "/SPA-Blog/precache-manifest.3706bc93faec5a1c744c7207ad3cd5b7.js",
+    "service-worker.js": "/SPA-Blog/service-worker.js",
+    "static/css/main.6ff89437.chunk.css.map": "/SPA-Blog/static/css/main.6ff89437.chunk.css.map"
+  }
+}
