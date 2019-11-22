@@ -1,5 +1,5 @@
 export function getDate(dateOrigin) {
-  if (!dateOrigin) return 'who knows ?';
+  if (!dateOrigin || isNaN(dateOrigin)) return 'who knows ?';
   const date = new Date(dateOrigin);
   return date.toDateString().substr(4, 6);
 }

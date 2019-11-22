@@ -1,0 +1,29 @@
+.msg {
+  position: fixed;
+  left: calc(50% - 100px);
+  top: auto;
+  bottom: 100px;
+  width: 200px;
+  height: 35px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  background: rgba(42, 180, 221, 0.9);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  z-index: 20;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  -webkit-animation: fadeInOout 2s;
+          animation: fadeInOout 2s;
+}
+/*# sourceMappingURL=Msg.css.map */

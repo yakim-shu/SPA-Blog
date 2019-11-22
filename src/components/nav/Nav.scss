@@ -89,7 +89,8 @@
       content: '';
       @include size(26px);
       @include absolute($right: 20px, $top: 0);
-      background: url("./../../img/logo192.png") no-repeat center center;
+      //TODO: background: url("./../../img/logo192.png") no-repeat center center;
+      background: url("/logo192.png") no-repeat center center;
       background-size: contain;
     }
   }

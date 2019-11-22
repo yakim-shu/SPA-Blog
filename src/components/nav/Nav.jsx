@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 import Logo from './../logo/Logo';
 import debounce from 'lodash.debounce';
 import Search from './../../containers/Search';
@@ -38,20 +38,20 @@ class Nav extends Component {
             <span className="navicon"></span>
           </label>
           <ul className="navbar__list menu">
-            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-            <li><NavLink to="/posts" activeClassName="active">List</NavLink></li>
+            <li><Link href="/" activeClassName="active">Home</Link></li>
+            <li><Link href="/posts" activeClassName="active">List</Link></li>
             <li className="dropdown">
-              <NavLink to="/category" activeClassName="active">Category</NavLink>
+              <Link href="/category" activeClassName="active">Category</Link>
               <div className="dropdown-content">
                 {
                   category.map((item, index) => (
-                    <NavLink to={`/category/${item}`} key={index}>{item}</NavLink>
+                    <Link href={`/category/${item}`} key={index}>{item}</Link>
                   ))
                 }
               </div>
             </li>
-            <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-            <li><NavLink to="/add-post" activeClassName="active">AddPost</NavLink></li>
+            <li><Link href="/about" activeClassName="active">About</Link></li>
+            <li><Link href="/add-post" activeClassName="active">AddPost</Link></li>
             <li><Search /></li>
           </ul>
         </div>

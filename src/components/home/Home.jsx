@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
 import { getDate } from './../../utils';
-import Spinner from '../spinner/Spinner';
+// import Spinner from '../spinner/Spinner';
 import Img from 'react-image';
+import Link from 'next/link';
 
 const ListContent = ({ post }) => (
   <div className="home-list__item-inner">
@@ -16,7 +16,8 @@ const ListContent = ({ post }) => (
 
 const ListImg = ({ src }) => (
   <div className="pic">
-    <Img src={src} loader={<Spinner />} />
+    {/* <Img src={src} loader={<Spinner />} /> */}
+    <Img src={src} />
   </div>
 );
 
@@ -30,15 +31,17 @@ class Home extends Component {
   render() {
     const { postList, isLoading } = this.props;
 
-    if (isLoading) return <Spinner />;
+    // if (isLoading) return <Spinner />;
     return (
       <div className="home-list">
         {
           postList.map(post => (
             <section key={post.id} className="home-list__item">
-              <Link to={`/posts/${post.id}`}>
-                <ListImg src={post.pic} />
-                <ListContent post={post} />
+              <Link href={`/posts/${post.id}`}>
+                <>
+                  <ListImg src={post.pic} />
+                  <ListContent post={post} />
+                </>
               </Link>
             </section>
           ))
@@ -48,4 +51,4 @@ class Home extends Component {
   }
 }
 
-export default withRouter(Home);
+export default Home;
