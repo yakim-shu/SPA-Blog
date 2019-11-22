@@ -1,40 +1,33 @@
-# SPA - Blog
+（ 有更動的檔案幾乎都在 `pages/` 資料夾底下 ）
 
-用 React 打造的 SPA Blog，裡面的文章都是自己學習 React 的筆記。
+請下載後 `npm run dev`
 
-#### 👉 [DEMO](https://yakim-shu.github.io/SPA-Blog/)
+以下我把遇到的疑問、以及如何解決的過程紀錄在這裡：
 
-![pic-article](https://i.imgur.com/KXitN8k.jpg)
+### Q: next 沒有入口的問題
 
-### Feature
-- 文章分類、標題搜尋
-- 支持 markdown 格式發布文章，並支援 code highlight
-- 操作文章會有回饋訊息，增加使用者體驗
+以往在 React 裡面會有一個入口點，在那裡把 Redux store 用 Provider 傳進去，但看到 next.js 的 router 是直接以檔案放在 `pages/` 資料夾底下，一時之間不知道如何對應，後來才看到有 `_app.js` 跟 `document.js` 可以做全局設定。
 
+### Q: redux 的問題
 
-### Tech
-- react-router 處理前端路由
-- 搭配 Redux 管理狀態，解決 props drilling 的問題
-- 使用 redux-promise 處理非同步操作
-- 文章 API 以 JSON Server 部署到 Digital Ocean、並使用 Nginx 作代理
+這部分應該算是最大的問題，如何將 redux 跟 next 結合，最後是直接照著官網範例：[with-redux](https://github.com/zeit/next.js/tree/canary/examples/with-redux)，直接用裡面的 [withRedux](https://github.com/zeit/next.js/blob/canary/examples/with-redux/lib/redux.js) 檔案複製下來修改。
 
-### Installation
+### Q: redux action 不知道是否完成的問題（暫時改用直接 call API）
 
-- Clone the repo
-```sh
-git clone https://github.com/yakim-shu/SPA-Blog.git
-```
-- Install packages
-```sh
-yarn
-```
-- Run project
-```sh
-yarn run start
+首頁的這支 API：https://blog-api.yakim.tw/posts/?_sort=id&_order=asc&_limit=5，改成 Server 發送後 action 會不知道是否完成，所以就不是以發送 action 的方式，而是直接 call API。
+
+```javascript
+IndexPage.getInitialProps = async () => {
+ const res = await getLimitPosts();
+ const json = res.data;
+
+ return {
+  ssrPostList: json
+ }
+}
 ```
 
-### Todos
 
- - [ ] 權限管理
- - [ ] 文章留言版
+### Q: 引入 SCSS 的問題 
 
+SCSS & CSS 沒有辦法直接引入挺麻煩的，還要再新增個 `next.config.js`
