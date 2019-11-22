@@ -1,36 +1,16 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Logo from './../logo/Logo';
-import debounce from 'lodash.debounce';
 import Search from './../../containers/Search';
 
 class Nav extends Component {
-  state = {
-    isFixed: false,
-  };
-
-  // 加入 debounce 延遲
-  componentDidMount() {
-    window.addEventListener("scroll", debounce(this.handleScroll, 50));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", debounce(this.handleScroll, 50));
-  }
-
-  handleScroll = () => {
-    this.setState({
-      isFixed: window.pageYOffset > 80
-    })
-  };
 
   render() {
-    const { isFixed } = this.state;
     const { category } = this.props;
 
     return (
       <nav
-        className={`navbar ${isFixed ? 'fixed' : ''}`} >
+        className='navbar'>
         <div className="navbar__inner">
           <Logo />
           <input className="menu-btn" type="checkbox" id="menu-btn" />
