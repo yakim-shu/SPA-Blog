@@ -3,8 +3,6 @@ import App from 'next/app'
 
 import './../src/scss/index.scss';
 
-import { withRedux } from './../src/withRedux';
-
 class MyApp extends App {
  render() {
   const { Component, pageProps } = this.props
@@ -12,4 +10,4 @@ class MyApp extends App {
  }
 }
 
-export default withRedux(MyApp);
+export default MyApp;
