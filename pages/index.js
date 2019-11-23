@@ -2,31 +2,24 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Home from './../src/components/home/Home';
 import { Actions } from './../src/actions';
-import { getLimitPosts } from './../src/webAPI'
+import { withRedux } from './../src/withRedux';
 
 const HomeContainer = props => {
  return (<Home {...props} />);
 }
 
 const mapStateToProps = ({ posts }, props) => ({
- postList: posts.postList.length > 0 ? posts.postList : props.ssrPostList,
+ postList: posts.postList || [],
  isLoading: posts.isLoading,
 });
 
-const mapDispatchToProps = {
- getLimitPosts: Actions.GET_LIMIT_POSTS
-}
+const IndexPage = connect(mapStateToProps)(HomeContainer);
 
-const IndexPage = connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+IndexPage.getInitialProps = async ({ reduxStore }) => {
+ await reduxStore.dispatch(Actions.GET_LIMIT_POSTS());
 
-IndexPage.getInitialProps = async () => {
- const res = await getLimitPosts();
- const json = res.data;
-
- return {
-  ssrPostList: json
- }
+ return {}
 }
 
 
-export default IndexPage
+export default withRedux(IndexPage)

@@ -23,11 +23,6 @@ const ListImg = ({ src }) => (
 
 
 class Home extends Component {
-  componentWillMount() {
-    const { getLimitPosts } = this.props;
-    getLimitPosts();
-  }
-
   render() {
     const { postList, isLoading } = this.props;
 
